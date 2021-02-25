@@ -1,4 +1,4 @@
-### Alacrity Studios 2021 Website
+## Alacrity Studios 2021 Website
+### Andy Wong
 
-Just a basic site for now since the last one was from
-2017 and outdated.
+Update of my personal website for 2021. Back to basics, using only pure HTML and CSS, no frameworks.

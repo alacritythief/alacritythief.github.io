@@ -1,10 +1,10 @@
-/* load fonts */
+/* LOAD CUSTOM FONTS */
 @font-face {
   font-family: 'Consolas';
   src: url('Consolas.woff') format('woff')
 }
 
-/* CSS Reset */
+/* CSS RESET */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -67,17 +67,41 @@ body {
   padding: 2rem;
 }
 
-.cursor {
-  display: inline-block;
-  background-color: white;
-  width: 10px;
-  height:20px;
-  margin-left: 0.5rem;
-  animation: 1s blink infinite;
+a:link, a:visited{
+  color: white;
+  text-decoration: none;
 }
 
+a:hover, a:active {
+  background-color: white;
+  color:black;
+}
+
+/* Breakpoint for really tiny screens */
+@media only screen and (max-width: 375px) {
+  .box-container {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .box-item {
+    padding: 1rem;
+  }
+}
+
+/* Animated cursor */
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
+
+.cursor {
+  display: inline-block;
+  background-color: white;
+  width: 10px;
+  height: 20px;
+  margin-left: 0.5rem;
+  animation: 1s blink infinite;
+}
+
