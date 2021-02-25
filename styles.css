@@ -56,9 +56,11 @@ body {
   margin-top: -2rem;
   margin-left: -1rem;
   border: 1px dotted white;
+}
+
+.box-transition {
   box-shadow: 1rem 1rem 0 white;
   transition: box-shadow 1s ease-in-out;
-  -webkit-transition: box-shadow 1s ease-in-out;
 }
 
 .box-item {

@@ -6,7 +6,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="box-container">
+      <div id="box-main" class="box-container">
         <div class="box-item">
           <h2><strong>Andy Wong</strong></h2><div class="cursor"></div><br />
           <h3>Senior Software Engineer</h3><br />
@@ -19,5 +19,12 @@
         </div>
       </div>
     </div>
+    <script>
+      // ensures the transition effect is always played upon page load or refresh
+      window.onload = function() {
+        const boxElement = document.getElementById("box-main");
+        boxElement.classList.add("box-transition")
+      }
+    </script>
   </body>
 </html>
